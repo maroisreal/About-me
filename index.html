@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>about me</title>
+  </head>
+  <body>
+    <!-- here we start the header -->
+    <header>
+      <div class="logo">Maro</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- here we end the header-->
+    <!-- here we start the main content-->
+    <section id="about" class="about-me">
+      <div class="container">
+        <img
+          src="./img/maroishere2.jpeg"
+          alt="Profile Picture"
+          class="profile-pic"
+        />
+        <div class="bio">
+          <h1>About Me</h1>
+          <p>
+            Hello! I'm Marwan, a passionate web developer with a knack for
+            creating dynamic and user-friendly websites. I love coding,
+            problem-solving, and learning new technologies. When I'm not coding,
+            you'll find me reading, exploring nature, or experimenting with new
+            recipes!
+          </p>
+          <div id="visitor-counter" class="visitor-counter"></div>
+
+          <div class="social-links">
+            <a
+              href="https://youtu.be/GOhJ1Xzb_cY?si=rhyPw-_qpeI7C-j7"
+              target="_blank"
+              >GitHub</a
+            >
+            <a
+              href="https://youtu.be/GOhJ1Xzb_cY?si=rhyPw-_qpeI7C-j7"
+              target="_blank"
+              >LinkedIn</a
+            >
+            <a href="https://youtu.be/GOhJ1Xzb_cY?si=rhyPw-_qpeI7C-j7"
+              >Email Me</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="experience">
+      <h2>experience</h2>
+      <ul>
+        <li>
+          <strong>Frontend Development:</strong> HTML, CSS, JavaScript, React.js
+        </li>
+        <li><strong>Backend Development:</strong> Node.js, Express.js</li>
+        <li><strong>Database Management:</strong> MySQL, MongoDB</li>
+        <li><strong>Tools:</strong> Git, Docker, VS Code</li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Marwan. All rights reserved.</p>
+    </footer>
+
+    <script src="scrpit.js">
+      const bioText = document.querySelector('.bio p');
+          const messages = [
+              "أحب البرمجة وحل المشكلات!",
+              "أستمتع بالتعلم واستكشاف التقنيات الجديدة!",
+              "مرحباً بكم في صفحتي الشخصية!"
+          ];
+
+
+          setInterval(() => {
+              bioText.textContent = messages[index];
+              index = (index + 1) % messages.length;
+          }, 3000);
+    </script>
+  </body>
+</html>
